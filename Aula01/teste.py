@@ -10,8 +10,6 @@ for i in range(0, 10):
     for j in range(0, 10):
         if lista[i] <= lista[j]:
             menor = lista[i]
-        
-    listord.append(menor)
+            print(menor)
 
-print('----------')
-print(listord)
+
