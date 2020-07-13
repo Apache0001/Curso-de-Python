@@ -1,12 +1,12 @@
 from math import sqrt, ceil
-from random import randint
+import random 
 num  = int(input("Digite um número: "))
 raiz  = sqrt(num)
 print(ceil(raiz))
 
 vetor = []
 for c in range(0, 10):
-    num2 = randint(0, 11)
+    num2 = random.randint(0, 11)
     vetor.append(num2)
 print(vetor)
 maior = vetor[0]
@@ -30,3 +30,8 @@ for i in range(0, 10):
 
 print(f'O maior valor é: {maior} na posicão: {posMaior}')
 print(f'O menor valor é: {menor} na posição: {posMenor}')
+
+num = ['Pedra','Papel', 'Tesoura']
+
+escolha = random.choices(num)
+print(escolha)
